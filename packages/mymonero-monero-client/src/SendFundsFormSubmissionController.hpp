@@ -172,6 +172,7 @@ namespace SendFunds
 		// - from cb_i
 		vector<SpendableOutput> unspent_outs;
 		uint64_t fee_per_b;
+		uint64_t fee_per_o;
 		uint64_t fee_mask;
 		monero_fork_rules::use_fork_rules_fn_type use_fork_rules;
 		// - re-entry params

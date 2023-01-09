@@ -254,7 +254,7 @@ class MyMoneroCoreBridgeEssentialsClass
 		}
 		return ret.retVal;
 	}
-	estimated_tx_network_fee(fee_per_kb__string, priority, optl__fee_per_b_string, optl__fork_version) // this is until we switch the server over to fee per b
+	estimated_tx_network_fee(fee_per_kb__string, priority, optl__fee_per_b_string,optl__fee_per_o_string, optl__fork_version) // this is until we switch the server over to fee per b
 	{ // TODO update this API to take object rather than arg list
 		const args =
 		{
