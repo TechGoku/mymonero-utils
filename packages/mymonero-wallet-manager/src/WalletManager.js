@@ -11,8 +11,8 @@ class WalletManager {
     this.bridgeClass = {}
     this.wallets = []
     this.contactManager = new ContactManager()
-    this.appName = 'MyMonero'
-    this.appVersion = '1.1.24'
+    this.appName = 'MyBeldex'
+    this.appVersion = '1.0.0'
     this.apiClient = new LWSClient({ url: url })
   }
 
