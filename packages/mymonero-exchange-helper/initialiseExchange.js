@@ -726,7 +726,7 @@ function initialiseExchangeHelper(context, exchangeHelper) {
             }
             getRates()            
             // Safe to set fee because the DOM will have rendered
-            let estimatedTotalFee_JSBigInt = context.monero_utils.estimated_tx_network_fee(null, 1, '24658');
+            let estimatedTotalFee_JSBigInt = context.monero_utils.estimated_tx_network_fee(null, 1, '666','100000');
             let estimatedFeeStr = exchangeHelper.htmlHelper.newEstimatedNetworkFeeString(estimatedTotalFee_JSBigInt);
             let feeElement = document.getElementById('tx-fee')
             // Safe to set up wallet selector since it'll have been rendered
