@@ -17,8 +17,8 @@ class LWSClient {
    */
   constructor (options = {}) {
     this.httpClient = options.httpClient || axios
-    this.appName = options.appName || 'MyMonero'
-    this.appVersion = options.appVersion || '1.3.0'
+    this.appName = options.appName || 'MyBeldex'
+    this.appVersion = options.appVersion || '1.0.0'
     this.api_key = options.api_key || null,
     axios.defaults.baseURL = options.url || 'https://api.mymonero.com'
   }
@@ -179,7 +179,7 @@ class LWSClient {
       amount: '0',
       dust_threshold: '2000000000',
       use_dust: true,
-      mixin: 15,
+      mixin: 9,
       app_name: self.appName,
       app_version: self.appVersion
     }
@@ -218,7 +218,7 @@ class LWSClient {
     }
     let request_body = {
       amounts: amounts,
-      count: 16,
+      count: 10,
       app_name: self.appName,
       app_version: self.appVersion
     }
